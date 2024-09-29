@@ -14,5 +14,5 @@ const MyName = new String('Lakshya-js')
 const x = MyName.substring(0,4)
 console.log(x);     //Laks
 
-const y = MyName.slice(-7,2)    
+const y = MyName.slice(-7,4)    
 console.log(y);

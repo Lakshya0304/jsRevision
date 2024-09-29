@@ -1,4 +1,4 @@
-// Primitive => number , string , boolean , null , undefined , symbo , bigInt
+// Primitive => number , string , boolean , null , undefined , symbol , bigInt
 // Non - primitive => array , object , function
 
 // Stack (Primitive)        => we make a copy of reference value

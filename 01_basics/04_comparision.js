@@ -11,3 +11,9 @@ console.log( null >= 0);    //true
 // ===
 
 console.log(2 === "2");
+
+
+if("1" === true)
+{
+    console.log(true);
+}
