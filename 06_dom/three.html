@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("C++")
+
+    function addOptiLang(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLang("TypeScript")
+
+    // addLanguage && addOptiLang both the function work same but the 2nd ones is better then the 1st one
+
+    //Edit
+    const second = document.querySelector("li:nth-child(1)")
+    // console.log(second);
+    const newLi = document.createElement('li')
+    newLi.textContent = "C"
+    second.replaceWith(newLi)
+
+    function editLanguage(childNumber , lang){
+        // const num = `${childNumber}`
+        const second = document.querySelector(`li:nth-child(${childNumber})`)
+        // console.log(second);
+        const newLi = document.createElement('li')
+        newLi.textContent = `${lang}`
+        second.replaceWith(newLi)
+    }
+    editLanguage(3,"React")
+
+    //Remove
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.remove()
+
+    
+
+</script>
+
+</html>

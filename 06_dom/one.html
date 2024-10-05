@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body style="background-color: #212121 ; color:#fff; ">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parentDocument = document.querySelector('.parent' )
+    // console.log(parentDocument);
+    // console.log(parentDocument.children);
+    // console.log(parentDocument[1].children);
+
+    for (let i = 0; i < parentDocument.children.length; i++) {
+        console.log(parentDocument.children[i].innerHTML)
+        parentDocument.children[i].style.color = "orange"
+    }
+    
+    
+</script>
+<!-- <body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">DOM learning on youtube <span >test text</span></h1>
+        <p>Lorem ipsum dolor sit amet. </p>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+<script>
+    // const myLiList = document.getElementsByClassName('list-item')   //get it by HTMLCollection but we can't iterate or do anything like array 
+    // //to solve this issue we 
+    // //CONVERT HTMLCollection INTO ARRAY
+    // console.log(Array.from(myLiList))
+    // // console.log(myLiList)
+</script> -->
+</html>
